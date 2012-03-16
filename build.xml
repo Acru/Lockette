@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Lockette.makejar" default="makejar" basedir=".">
+	<target name ="makejar" description="Create a JAR output file">
+		<unzip src="${basedir}\PluginCore.jar" dest="bin">
+			<patternset>
+				<exclude name="META-INF/"/>
+			</patternset>
+		</unzip>
+		<jar destfile="${basedir}\Lockette.jar">
+			<fileset dir="bin" includes="**/*.class"/>
+			<fileset dir="." includes="plugin.yml"/>
+		</jar>
+	</target>
+</project>
+

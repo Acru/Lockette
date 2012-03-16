@@ -1,0 +1,96 @@
+name: Lockette
+main: org.yi.acru.bukkit.Lockette.Lockette
+version: 1.6
+author: Acru
+description: A simple plugin for locking containers and doors without passwords or database files.  Inspired by the old hmod plugins Lock by Roman "kingseta" Pramberger and ChestCapsule by Fernando "Fergo".
+commands:
+    lockette:
+        aliases: [lock]
+        description: Access to the Lockette plugin via commands.
+        usage: |
+            /<command> <line number> <text> - Edits signs on locked containers. Right click on the sign to edit.
+            /<command> fix - Fixes an automatic door that is in the wrong position. Look at the door to edit.
+            /<command> reload - Reloads the configuration files.  Operators only.
+            /<command> version - Reports Lockette version string.
+permissions:
+    lockette.*:
+        description: Permission for a super admin who can do anything.
+        children:
+            lockette.user.create.*: true
+            lockette.admin.create.*: true
+            lockette.admin.break: true
+            lockette.admin.bypass: true
+            lockette.admin.snoop: true
+            lockette.admin.reload: true
+            lockette.towny.wilds: true
+    lockette.user.*:
+        description: All the permissions a normal user normally needs.
+        children:
+            lockette.user.create.*: true
+            lockette.towny.wilds: true
+    lockette.user.create.*:
+        description: Allows the normal method of locking containers.
+        children:
+            lockette.user.create.chest: true
+            lockette.user.create.furnace: true
+            lockette.user.create.dispenser: true
+            lockette.user.create.brewingstand: true
+            lockette.user.create.custom: true
+            lockette.user.create.trapdoor: true
+            lockette.user.create.door: true
+    lockette.admin.*:
+        description: All the permissions a normal admin normally needs.
+        children:
+            lockette.user.create.*: true
+            lockette.admin.create.*: true
+            lockette.admin.break: true
+            lockette.admin.bypass: true
+            lockette.towny.wilds: true
+    lockette.admin.create.*:
+        description: Allows the admin method of locking containers.
+        children:
+            lockette.admin.create.chest: true
+            lockette.admin.create.furnace: true
+            lockette.admin.create.dispenser: true
+            lockette.admin.create.brewingstand: true
+            lockette.admin.create.custom: true
+            lockette.admin.create.trapdoor: true
+            lockette.admin.create.door: true
+    lockette.user.create.chest:
+        default: op
+    lockette.user.create.furnace:
+        default: op
+    lockette.user.create.dispenser:
+        default: op
+    lockette.user.create.brewingstand:
+        default: op
+    lockette.user.create.custom:
+        default: op
+    lockette.user.create.trapdoor:
+        default: op
+    lockette.user.create.door:
+        default: op
+    lockette.admin.create.chest:
+        default: op
+    lockette.admin.create.furnace:
+        default: op
+    lockette.admin.create.dispenser:
+        default: op
+    lockette.admin.create.brewingstand:
+        default: op
+    lockette.admin.create.custom:
+        default: op
+    lockette.admin.create.trapdoor:
+        default: op
+    lockette.admin.create.door:
+        default: op
+    lockette.admin.break:
+        default: op
+    lockette.admin.bypass:
+        default: op
+    lockette.admin.snoop:
+        default: false
+    lockette.admin.reload:
+        default: false
+    lockette.towny.wilds:
+        default: op
