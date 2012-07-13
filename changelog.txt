@@ -5,6 +5,7 @@ Added By ElgarL to start tracking changes.
 
 1.7:
 	- Allow pluginCore to recognize/handle non Towny worlds.
+	- Update plugin dependencies to latest versions.
 	- updated PluginCore to 1.3.4.
 1.7.1:
 	- Remove debug code which could be exploited on off-line servers.
