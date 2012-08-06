@@ -47,13 +47,13 @@ public class Lockette extends PluginCore{
 	protected static boolean				explosionProtectionAll, rotateChests;
 	protected static boolean				adminSnoop, adminBypass, adminBreak;
 	protected static boolean				protectDoors, protectTrapDoors, usePermissions;
-	protected static boolean				directPlacement, colorTags;
+	protected static boolean				directPlacement, colorTags, debugMode;
 	protected static int					defaultDoorTimer;
 	protected static String					broadcastSnoopTarget, broadcastBreakTarget, broadcastReloadTarget;
 	
 	protected static boolean				msgUser, msgOwner, msgAdmin, msgError, msgHelp;
 	protected static String					altPrivate, altMoreUsers, altEveryone, altOperators, altTimer, altFee;
-	protected static List<Object>			customBlockList = null;
+	protected static List<Object>			customBlockList = null, disabledPluginList = null;
 	
 	protected static FileConfiguration			strings = null;
 	protected final HashMap<String, Block>	playerList = new HashMap<String, Block>();
@@ -237,6 +237,11 @@ public class Lockette extends PluginCore{
 		properties.set("enable-quick-protect", directPlacement);
 		colorTags = properties.getBoolean("enable-color-tags", true);
 		properties.set("enable-color-tags", colorTags);
+
+		// Don't write this option back out if it doesn't exist, and write a warning if it is enabled.
+		debugMode = properties.getBoolean("enable-debug", false);
+		if(debugMode) log.warning("[" + getDescription().getName() + "] Debug mode is enabled, so Lockette chests are NOT secure.");
+		
 		//directPlacement = true;
 		
 		
@@ -270,8 +275,23 @@ public class Lockette extends PluginCore{
 			properties.set("custom-lockable-block-list", customBlockList);
 			propChanged = true;
 		}
-		log.info("[" + getDescription().getName() + "] Custom lockable block list: " + customBlockList.toString());
+		if(!customBlockList.isEmpty()){
+			log.info("[" + getDescription().getName() + "] Custom lockable block list: " + customBlockList.toString());
+		}
 		
+		
+		// Customizable disabled plugin link list.
+		
+		disabledPluginList = (List<Object>) properties.getList("linked-plugin-ignore-list");
+		if(disabledPluginList == null){
+			disabledPluginList = new ArrayList<Object>(1);
+			disabledPluginList.add("mcMMO");
+			properties.set("linked-plugin-ignore-list", disabledPluginList);
+			propChanged = true;
+		}
+		if(!disabledPluginList.isEmpty()){
+			log.info("[" + getDescription().getName() + "] Ignoring linked plugins: " + disabledPluginList.toString());
+		}
 		
 		
 		broadcastSnoopTarget = properties.getString("broadcast-snoop-target");
@@ -816,6 +836,11 @@ public class Lockette extends PluginCore{
 	
 	//********************************************************************************************************************
 	// Start of external permissions section
+	
+	
+	protected boolean pluginEnableOverride(String pluginName){
+		return(isInList(pluginName, Lockette.disabledPluginList));
+	}
 	
 	
 	protected boolean usingExternalPermissions(){
@@ -1650,7 +1675,7 @@ public class Lockette extends PluginCore{
 	}
 	
 	
-	protected static boolean isInList(int target, List<Object> list){
+	protected static boolean isInList(Object target, List<Object> list){
 		if(list == null) return(false);
 		for(int x = 0; x < list.size(); ++x) if(list.get(x).equals(target)) return(true);
 		return(false);

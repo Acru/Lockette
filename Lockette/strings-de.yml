@@ -1,0 +1,42 @@
+language: German
+author: Efstajas
+editors: ''
+version: 2
+alternate-private-tag: Privat
+alternate-moreusers-tag: Mehr Leute
+alternate-everyone-tag: Jeder
+alternate-operators-tag: Operatoren
+alternate-timer-tag: Minuten
+msg-user-illegal: Illegale Kiste entfernt!
+msg-user-resize-owned: Du kannst keine von *** geschützte Kiste vergrössern.
+msg-help-chest: Platziere ein Schild mit [Private] an der Truhe, um sie zu schützen.
+msg-user-touch-owned: Diese Kiste wurde geschützt von ***.
+msg-help-select: Schild ausgewählt, benutze /lockette <Reihe> <Text>, um sie zu ändern.
+msg-admin-snoop: (Admin) @@@ hat in eine Truhe, die *** geschützt hat, reingeguckt!
+msg-user-denied: Du darfst das hier nicht öffnen!
+msg-owner-release: Du hast diese Truhe wieder öffentlich gemacht!
+msg-admin-release: (Admin) @@@ hat eine Truhe von *** öffentlich gemacht!
+msg-user-release-owned: Du kannst diese Truhe von *** nicht öffentlich machen.
+msg-owner-remove: Du hast Personen von der Inhaberliste dieser Truhe entfernt!
+msg-user-remove-owned: Du kannst keine Personen von dieser Truhe entfernen.
+msg-user-break-owned: Du kannst diese von *** geschützte Truhe nicht zerstören.
+msg-error-claim: Hier gibt es keine Truhe in der Nähe!
+msg-owner-claim: Du hast diese Truhe geschützt!
+msg-error-adduser-owned: Du kannst keine Personen auf die Inhaberliste dieser Truhe setzen.
+msg-error-adduser: Hier gibt es keine Truhe!
+msg-owner-adduser: Du hast Personen zu dieser Truhe hinzugefügt!
+msg-help-command1: '&C/lockette <Reihe> <Text> - Ändert Text auf Lockette- Schildern. Rechtsklick auf das Schild, um es auszuwählen.'
+msg-help-command2: '&C/lockette fix - Fix eine automatische Tür. Schauen Sie sich die Tür zu bearbeiten.'
+msg-help-command3: '&C/lockette reload - Lädt die Konfiguration neu.'
+msg-help-command4: '&C/lockette version - Zeige version.'
+msg-admin-reload: Lädt Lockette- Konfiguration neu.
+msg-error-edit: Du musst erst ein Schild per Rechtsklick auswählen.
+msg-owner-edit: Text geändert.
+msg-user-denied-door: Du darfst diese Tür nicht benutzen.
+msg-error-claim-conflict: Konflikt mit einer bereits vorhandenen geschützten Tür.
+msg-user-conflict-door: Konflikt- Tür entfernt!
+msg-admin-bypass: Du hast eine Tür von *** geöffnet, denke dran sie zu schliessen.
+msg-error-permission: Permission to lock container denied.
+msg-admin-claim-error: Spieler *** ist nicht online. Hast du den richtigen Namen eingegeben?
+msg-admin-claim: Du hast eine Truhe für *** geschützt..
+msg-error-fix: Kein Besitz Tür gefunden.

@@ -1,0 +1,42 @@
+language: Polish
+author: Kamild1996
+editors: ''
+version: 2
+alternate-private-tag: Prywatny
+alternate-moreusers-tag: Uprawnieni
+alternate-everyone-tag: Wszyscy
+alternate-operators-tag: Operatorzy
+alternate-timer-tag: Zegar
+msg-user-conflict-door: Drzwi kolidujace usuniete!
+msg-user-illegal: Nieprawidlowa skrzynia usunieta!
+msg-user-resize-owned: Nie mozesz powiekszyc skrzyni posiadanej przez ***.
+msg-help-chest: Poloz tabliczke z napisem [private] przed skrzynia by ja zabezpieczyc.
+msg-owner-release: Odbezpieczyles skrzynie!
+msg-admin-release: (Admin) @@@ has broken open a container owned by ***!
+msg-user-release-owned: Nie mozesz odbezpieczyc skrzyni zabezpieczonej przez ***.
+msg-owner-remove: Usunales uzytkownikow skrzyni!
+msg-user-remove-owned: Nie mozesz usunac uzytkownikow skrzyni zabezpieczonej przez ***.
+msg-user-break-owned: Nie mozesz rozwalic skrzyni zabezpieczonej przez ***.
+msg-user-denied-door: Nie masz uprawnien, by uzywac tych drzwi.
+msg-user-touch-owned: Ta skrzynia zostala zabezpieczona przez ***.
+msg-help-select: Tabliczka wybrana, uzyj /lockette <wiersz> <tekst> w celu edycji.
+msg-admin-bypass: Ominales zabezpieczenia drzwi gracza ***, nie zapomnij zamknac drzwi za soba.
+msg-admin-snoop: (Admin) @@@ przeglada skrzynie zabezpieczona przez ***!
+msg-user-denied: Nie masz uprawnien, by uzywac tej skrzyni.
+msg-error-permission: Nie posiadasz uprawnien do blokady skrzyni/drzwi.
+msg-error-claim: Brak nieprzypisanej skrzyni w poblizu, by uczynic ja prywatna!
+msg-error-claim-conflict: Konflikt z zabezpieczonymi juz drzwiami.
+msg-admin-claim-error: Gracz *** nie jest online, upewnij sie, ze uzyles prawidlowego nicku.
+msg-admin-claim: Zablokowales skrzynie/drzwi dla ***.
+msg-owner-claim: Zablokowales skrzynie/drzwi!
+msg-error-adduser-owned: Nie mozesz dodac uzytkownikow skrzyni zabezpieczonej przez ***.
+msg-error-adduser: Brak zabezpieczonej skrzyni, do ktorej moznaby bylo przypisac uzytkownikow!
+msg-owner-adduser: Dodales uzytkownikow skrzyni!
+msg-help-command1: '&C/lockette <line number> <text> - Edytuje tabliczki na zablokowanych skrzyniach/drzwiach. Prawym klikiem na tabliczke, by ja edytowac.'
+msg-help-command2: '&C/lockette fix - Rozwiazuje automatyczne drzwi. Spojrz na drzwi do edycji.'
+msg-help-command3: '&C/lockette reload - Przeladowuje konfiguracje Lockette.'
+msg-help-command4: '&C/lockette version - Pokaz wersji.'
+msg-admin-reload: Przeladowywanie plikow konfiguracyjnych Lockette.
+msg-error-edit: Najpierw wybierz tabliczke klikajac prawym przyciskiem myszy.
+msg-owner-edit: Pomyslnie zakonczono edycje tabliczki.
+msg-error-fix: Brak wlasnoscia drzwi znaleziono.

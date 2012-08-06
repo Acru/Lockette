@@ -1,11 +1,232 @@
-Changelog
----------
+Active Changelog is here:
 
-Added By ElgarL to start tracking changes.
+http://dev.bukkit.org/server-mods/lockette/pages/lockette-change-log/
 
-1.7:
-	- Allow pluginCore to recognize/handle non Towny worlds.
-	- Update plugin dependencies to latest versions.
-	- updated PluginCore to 1.3.4.
-1.7.1:
-	- Remove debug code which could be exploited on off-line servers.
+
+But here is a copy/paste:
+
+Version 1.7.2:
+
+    Added a configuration option to disable specific linked plugins, in case the api changes.
+    Added a check for hoeing grass with attached trap doors.
+    Re-implemented debug code as a configuration option, for test servers. 
+
+Version 1.7.1: [ElgarL]
+
+    Removed debug code which could be exploited on off-line servers. 
+
+Version 1.7: [ElgarL]
+
+    Allowed pluginCore to recognize/handle non Towny worlds.
+    Update plugin dependencies to latest versions. 
+
+Version 1.6:
+
+    Lowered earliest supported build version to 1846 and made manditory.
+    Fixed trees breaking signs off chests, this time for sure.
+    Fixed sticky pistons pulling protected pullable blocks.
+    Added Spanish language translation.
+    Added protection of brewing stands. (Finally...)
+    Added a custom list of protected blocks, set by config.
+        Defaults to the three blocks made with diamonds.
+        There may be some glitches, so be sure to test. 
+    Core: Fixed native groups support for bPermissions.
+    Core: Added LWC support for zones. 
+
+Version 1.5
+
+    Explosions are no longer canceled, but the list of blocks destroyed is pruned.
+    Added check to prevent trees from growing into protected blocks.
+    Fixed for the fence gate exploit.
+    Added some additional translations.
+    Added a command alias '/lock'.
+    Built in support for color tags, when creating protection signs.
+        Color tags are also allowed in the strings file. 
+    Bug fix for piston extension event.
+    Added a configuration option for operator breaking.
+    Changed the format of the log messages, for a cleaner look.
+    Core: Factions support for groups. (And fixed it again.)
+    Core: SimpleClans support for groups.
+    Core: MCMmo support for groups.
+    Core: Superperms, along with bPermissions support.
+    Core: Redesigned how other plugins are linked.
+    Core: iConomy support. (Unused in Lockette 1.5 so far...)
+    And more that I have probably forgotten... 
+
+Version 1.4.4
+
+    Added a feature to fix badly rotated chests when upgrading from pre-1.8 to 1.8+
+        Right-clicking the side of an older chest will cause the chest to face that side, works once only.
+        Added a configuration option 'enable-chest-rotation' to have this always work, defaults to false. 
+    Core: Towny: Fixed never being allowed to protect chests in a town. 
+
+Version 1.4.3
+
+    Fixed an exception in the previous version, thrown when PermissionsBukkit/Towny is not available. 
+
+Version 1.4.2
+
+    Core: No longer attempts to force-enable PermissionsBukkit/PermissionsEx/Towny, due to a bug in Bukkit.
+    Core: Improved Towny Town/Nation check for when a Resident/Town is not registered. 
+
+Version 1.4.1
+
+    Experimental Towny support, though not tested. I need someone to help with testing!
+        Core: Towny group support for towns/nations.
+        New permission lockette.towny.wilds for protecting in the wilds. 
+    Fixed quick-protect throwing an exception when another plugin removed the placed sign.
+    Core: New support of build zones.
+    Core: Improved handling when using multiple permission/group plugins.
+    Core: Added PermissionsBukkit group support. 
+
+Version 1.4
+
+    You can now protect a chest/furnace/dispenser instantly by right clicking it while holding a sign!
+        A second sign will be a [More Users] sign with [Everyone] as a user.
+        This new method can be toggled with the enable-quick-protect configuration option. 
+    New command: /lockette fix, to toggle an automatic door that has gotten out of sync. Look at it when typing the command.
+    Full trap door support.
+    Full piston protection for doors and trap doors.
+    Language file configuration option.
+    Preliminary support for MC 1.8 fence gates, may or may not work as expected.
+    Core: Worked around a change in GroupManager API, in the Essentials Phoenix build.
+    Added missing sound effects for doors, supported in builds 851+.
+    Fixed redstone still being disabled if the owner line is [Everyone].
+    Applied a fix for when another plugin was triggering the conflicting door message, when there was no conflict.
+    Improved security in a number of obscure cases.
+    More public functions for plugin interoperability. 
+
+Version 1.3.8
+
+    Reversed the change related to MinecartManiaAdminControls, but said plugin is updated too now.
+        This fixes a security issue. 
+
+Version 1.3.7
+
+    Worked around a change in MinecartManiaAdminControls 1.1.0 breaking door signs.
+    Changed the default value for enable-permissions to false.
+        Too many people had Permissions/GroupManager installed but didn't know how to use.
+        This will not effect existing configuration files. 
+
+Version 1.3.6
+
+    Fixed a config file option forcing permissions on if there are no permission plugins.
+    Added an internal warning about builds 685-703. 
+
+Version 1.3.5
+
+    Automatically closing doors! (Eg.: Use [Timer: 5] on the private sign.)
+        The global configuration setting can be overridden using an option on the sign. 
+    Added a check to see if a user is online, when creating a container for another user.
+        Allowed a group to be set as an owner, but with no permission to modify. 
+    Support for using GroupManager and Permissions simultaneously.
+        Fix for some dated or fake versions of permissions plugins. 
+    Separate permissions for creating protection on different types of blocks.
+        Also for the admin version.
+        Changed lockette.create.* to lockette.user.create.*, but left in support for the old node. 
+    Added a number of new configuration options.
+        Several options to specify who to send the broadcast messages to.
+            Support for either a group or a specific player. 
+        Options for disabling permissions and door bypassing. 
+    Fixed a case where the bypass message reported the wrong user.
+    Added a workaround for an mcMMO bug.
+    New undocumented command '/lockette version'. 
+
+Version 1.3.4
+
+    Native support for GroupManager, up to date Permissions handling, and three new permissions nodes!
+        Changed snoop behavior for doors, with a new permission, no longer broadcasts.
+        Added a permission for creating locked containers at all.
+        Added an admin permission for creating locked containers for anyone. 
+    Improved player listener effeciency in builds 588+.
+    Fixed an exception that was throwing for builds 561-587.
+    Wooden door breakage security fix for change in builds 561+.
+    Blocked tilling dirt under a door in builds 561+.
+    Blocked placing of doors by owned doors in builds 561+.
+    Updated internal minimum recommended build to 561... :3
+        Added an internal warning about builds 605-612. 
+
+Version 1.3.3
+
+    Fixed plugin for a breaking change in CB build 600, though backwards compatible.
+    Added a second undocumented public function, for connectivity. 
+
+Version 1.3.2
+
+    Enabled redstone for protected doors with [Everyone] as a user.
+    Improved detection of conflicting private doors, when creating new ones.
+    Relaxed restrictions on the placement of [More Users] signs on doors. (See doors section.)
+    Blocked a possible security issue with double doors.
+    Added support for CraftBukkit build 561 and up. 
+
+Version 1.3.1
+
+    Increased the internal recommended build version from 522 to 552. (Oops.)
+    Added a config file option to globally enable/disable door support.
+    Slightly changed container search to use the NESW rule, disregarding block types. 
+
+Version 1.3
+
+    Full support for protected doors, including double doors.
+    Added [Operators] keyword as a built in user group.
+    Color codes are stripped from signs before processing, for color compatibility.
+    Prevents an issue where one could replace sign text, in CB builds prior to 522.
+    Catches issues with out of date Permissions plugin.
+    Exposes an interface for other plugins to access, to check Lockette protected blocks.
+    Some general speed improvements. 
+
+Version 1.2.2
+
+    Workaround for Craftbukkit 454+, though this may break again in the future.
+    Fixed a bug I noticed in sign editing. 
+
+Version 1.2.1
+
+    Built against a newer version of Bukkit. 
+
+Version 1.2
+
+    Added configurations file for settings, and a strings file for additional language support.
+    Full Nijikokun's Permissions support, both versions 2.0 and 2.1, for groups and admin powers.
+        Defaults to using the ops file, if the plugin isn't available. 
+    Allowed the editing of previously placed signs.
+    More helpful messages, and options to disable them if you don't like messages.
+    Many other small details. 
+
+Version 1.1.4
+
+    Added a check for the server's CraftBukkit build version on enable. Enable will be aborted if it detects an unsupported version, and says so clearly in the log. (Auto-detects builds 231-326 only.)
+    Strengthened the owner's username check to be case sensitive. (Entered automatically, so no need to be insensitive here.)
+    Removed one unnecessary server log message. 
+
+Version 1.1.3
+
+    Added informational server log messages.
+    Added preliminary support for Nijikokun's Permissions plugin. (Not functional yet.)
+    Thought up a better namespace, so changed it again. 
+
+Version 1.1.2
+
+    Relaxed all user name checks to be case insensitive.
+    Updated plugin to use a more personal namespace. (Required by craftbukkit soon.) 
+
+Version 1.1.1
+
+    Made the check for [Everyone] case insensitive. 
+
+Version 1.1
+
+    Protection extended to Dispensers and Furnaces.
+    Explicitly blocked the creation of illegal sized chests. (Chests are 1 or 2 blocks in size only.)
+    Allowed [Everyone] as a user that lets anyone into the container.
+    Allowed more users via additional signs, headed [More Users]. 
+
+Version 1.0.1
+
+    Improved handling of long user names. (Name matches to 15 characters.)
+    Improved status messages from the plugin. 
+
+Version 1.0
+
+    First public release. 
+

@@ -1,0 +1,47 @@
+language: Slovenian
+author: LiqouRiiCe
+editors: ''
+version: 1
+alternate-private-tag: Privat
+alternate-moreusers-tag: Drugi
+alternate-everyone-tag: Vsi
+alternate-operators-tag: Admini
+alternate-timer-tag: Timing
+alternate-fee-tag: Davek
+msg-user-conflict-door: Konfliktna vrata odstranjena!
+msg-user-illegal: Nedovoljena skrinja odstranjena!
+msg-user-resize-owned: Ne mores povecati predmeta od ***.
+msg-help-chest: Postavi znak z napisom [Privat] ob skrinji za zaklep.
+msg-owner-release: Odstranil si zascito!
+msg-admin-release: (Admin) @@@ je odstranil zasctito igralca ***!
+msg-user-release-owned: Ne mores odstraniti zascite od ***.
+msg-owner-remove: Odstranil si uporabnike!
+msg-user-remove-owned: Ne mores odstraniti uporabnikov predmeta od ***.
+msg-user-break-owned: Ne mores odstraniti predmeta od ***.
+msg-user-denied-door: Nimas dovoljenja za odpiranje teh vrat !
+msg-user-touch-fee: 'Davek ### bo placan igralcu ***, za odpiranje.'
+msg-user-touch-owned: Ta predmet si lasti ***.
+msg-help-select: Znak oznacen, uporabi /lockette <st. vrstice> <zeljen napis> za urejanje.
+msg-admin-bypass: Odprl si vrata ki si jih lasti ***, ne pozabi jih zapreti !
+msg-admin-snoop: (Admin) @@@ si je ogledal skrinjo ki si jo lasti ***!
+msg-user-denied: Nimas dovoljenja za odpiranje te skrinje.
+msg-error-zone: To obmocje je zasciteno na ukaz ***.
+msg-error-permission: Nimas dovoljenja za zaklep !
+msg-error-claim: V blizini ni predmeta ki bi ga lahko zaklenil !
+msg-error-claim-conflict: Napaka pri zaklepanju konfliktnih vrat.
+msg-admin-claim-error: Igralec *** ni online, prepricaj se da je to pravo ime!
+msg-admin-claim: Zaklenil si predmet za igralca ***.
+msg-owner-claim: Zaklenil si predmet !
+msg-error-adduser-owned: Ne mores dodati uporabnikov k skirnji/vratom od ***.
+msg-error-adduser: V blizini ni predmeta h kateremu bi lahko dodal uporabnike !
+msg-owner-adduser: Dodal si uporabnike h predmetu!
+msg-help-command1: '&C/lockette <st. vrstice> <zeljen napis> - Uredi napis na znaku.
+    Desni klik na znak ki ga zelis urediti.'
+msg-help-command2: '&C/lockette fix - Popravi vrata ki so obrnjena narobe.
+    Glej v vrata ki jih zelis popraviti.'
+msg-help-command3: '&C/lockette reload - Znova nalozi konfiguracijsko datoteko.'
+msg-help-command4: '&C/lockette version - Verzija plugina Lockette.'
+msg-admin-reload: Nalagam konfiguracijsko datoteko.
+msg-error-fix: Ne najdem vrat za popravilo.
+msg-error-edit: Najprej izberi znak z desnim klikom.
+msg-owner-edit: Znak urejen !

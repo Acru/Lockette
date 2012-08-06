@@ -1,0 +1,42 @@
+language: French
+author: Misa
+editors: Acru
+version: 2
+alternate-private-tag: Privé
+alternate-moreusers-tag: Autre Noms
+alternate-everyone-tag: Tout le Monde
+alternate-operators-tag: Opérateurs
+alternate-timer-tag: Minuterie
+msg-user-conflict-door: Porte en conflit supprimée !
+msg-user-illegal: Coffre invalide supprimé !
+msg-user-resize-owned: Vous ne pouvez pas redimensionner un coffre protégé par ***.
+msg-help-chest: Placez un panneau avec [Privé] sur la première ligne devant un coffre pour le protéger.
+msg-owner-release: Vous avez libéré un conteneur !
+msg-admin-release: (Admin) @@@ a libéré un conteneur appartenant à ***!
+msg-user-release-owned: Vous ne pouvez pas libérer un conteneur appartenant à ***.
+msg-owner-remove: Vous avez supprimé des utilisateurs d'un conteneur !
+msg-user-remove-owned: Vous ne pouvez pas supprimer des joueurs d'un conteneur appartenant à ***.
+msg-user-break-owned: Vous ne pouvez pas détruire un conteneur appartenant à ***.
+msg-user-denied-door: Vous n'avez pas la permission d'ouvrir cette porte.
+msg-user-touch-owned: Ce conteneur a été protégé par ***.
+msg-help-select: Panneau selectionné, utilisez /lockette <numéro ligne> <texte> pour éditer.
+msg-admin-bypass: Vous avez forcé une porte appartenant à ***, pensez à la fermer derrière vous.
+msg-admin-snoop: (Admin) @@@ a jeté un oeil dans un conteneur appartenant à ***!
+msg-user-denied: Vous n'avez pas la permission d'ouvrir ce conteneur.
+msg-error-permission: Vous n'avez pas la permission de vérouiller ce conteneur.
+msg-error-claim: Aucun conteneur non protégé dans le coin.
+msg-error-claim-conflict: Conflit avec une porte existante
+msg-admin-claim-error: Le joueur *** n'est pas en ligne, soyez sur de bien écrire son nom.
+msg-admin-claim: Vous avez protégé un conteneur pour ***.
+msg-owner-claim: Vous avez protégé un conteneur !
+msg-error-adduser-owned: Vous ne pouvez pas ajouter de joueurs pour le conteneur protégé par ***.
+msg-error-adduser: Aucun conteneur protégé dans le coin pour y ajouter des utilisateurs !
+msg-owner-adduser: Vous avez ajouté des joueurs à ce conteneur !
+msg-help-command1: '&C/lockette <numéro ligne> <texte> - Edite le panneau sur un conteneur proétégé, clique droit pour éditer.'
+msg-help-command2: '&C/lockette fix - Fixer une porte automatique. Regardez la porte à éditer.'
+msg-help-command3: '&C/lockette reload - Recharger les fichiers de configuration'.
+msg-help-command4: '&C/lockette version - Voir la version.'
+msg-admin-reload: Rechargement des fichiers de configuration
+msg-error-edit: D'abord, selectionnez un panneau en faisant un clique droit dessus !
+msg-owner-edit: Panneau édité avec succès.
+msg-error-fix: Pas de porte propriété trouvé.

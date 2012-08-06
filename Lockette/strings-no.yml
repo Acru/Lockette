@@ -1,0 +1,48 @@
+language: Norwegian
+author: Tio1999
+editors: ''
+version: 1
+alternate-private-tag: Privat
+alternate-moreusers-tag: Fler Brukere
+alternate-everyone-tag: Alle
+alternate-operators-tag: Opertører
+alternate-timer-tag: Timer
+alternate-fee-tag: Takst
+msg-user-conflict-door: Problemskapende dør fjernet!
+msg-user-illegal: Fjernet skdet kiste
+msg-user-resize-owned: Du kan ikke gjøre om kister som er *** sin.
+msg-help-chest: Plasser et skilt hvor det står [Privat] får å sikre kisten din
+msg-owner-release: Du har fjernet sikringen!
+msg-admin-release: (Admin) @@@ Har brutt en sikring eiet av ***!
+msg-user-release-owned: DU kan ikke fjerne *** sin sikring.
+msg-owner-remove: DU har fjernet eiere av sikringen!
+msg-user-remove-owned: Du kan ikke fjerne brukere fra *** sin sikring!
+msg-user-break-owned: Du kan ikke ødlegge en gjenstand som er sikret av ***.
+msg-user-denied-door: Du kan ikke åpne denne døren.
+msg-user-touch-fee: 'En sum på ### har blitt betalt til *** for å åpne.'
+msg-user-touch-owned: Denne gjenstanden har blitt sikret av ***.
+msg-help-select: Skilt valgt. Bruk /lockette <linje nummer> <tekst> for å gjøre om.
+msg-admin-bypass: Du har passert en dør som eies ***, husk å stenge etter deg.
+msg-admin-snoop: (Admin) @@@ har snust i en kiste som er eid av ***!
+msg-user-denied: Du kan ikke åpne denne.
+msg-error-zone: Omerådet er sikret av  ***.
+msg-error-permission: Du kan ikke sikre gjensanden.
+msg-error-claim: Ingen usikret gjendstand å sikre!
+msg-error-claim-conflict: Denne vil lage en konflikt med en annen sikret dør.
+msg-admin-claim-error: Bruker: *** er ikke online! Har du skrevet brukernavnet riktig?
+msg-admin-claim: Du har sikret en gjenstand for ***.
+msg-owner-claim: Du har sikret denne gjenstanden!
+msg-error-adduser-owned: Du kan ikke legge til brukere på *** sin sikring.
+msg-error-adduser: Ingen gjendstand i nærheten å legge til brukere på!
+msg-owner-adduser: Du har lagdt til fler brukere på gjenstanden!
+msg-help-command1: '&C/lockette <lije nummer> <tekst> - Gjør om skiltet.
+  Right click on the sign to edit.'
+msg-help-command2: '&C/lockette fix - Reparerer en automatisk dør.
+  position. Se på døra for å gjøre om.'
+msg-help-command3: '&C/lockette reload - Laster inn konfigurasjonsfilen på nytt.  Operatører
+  only.'
+msg-help-command4: '&C/lockette version - Rapporterer Lockette's version string.'
+msg-admin-reload: laster inn konfigurasjonsfilen på nytt.
+msg-error-fix: Ingen sikret dør funnet.
+msg-error-edit: Først velg et skilt ved å høyrekilkke på det.
+msg-owner-edit: Skiltet ble gjort om uten problemer.

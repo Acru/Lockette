@@ -1,0 +1,46 @@
+language: Spanish
+author: Agubelu
+editors: _Robert
+version: 1
+alternate-private-tag: Privado
+alternate-moreusers-tag: Mas Usuarios
+alternate-everyone-tag: Todos
+alternate-operators-tag: Moderadores
+alternate-timer-tag: Tiempo
+alternate-fee-tag: Impuesto
+msg-user-conflict-door: ¡Puerta conflictiva eliminada!
+msg-user-illegal: ¡Cofre ilegal eliminado!
+msg-user-resize-owned: No puedes cambiar un cofre que pertenece a ***.
+msg-help-chest: Coloca un cartel con [Private] en la primera linea al lado del cofre para protegerlo.
+msg-owner-release: ¡Has desprotegido este objeto!
+msg-admin-release: (Admin) @@@ ha roto un objeto perteneciente a ***
+msg-user-release-owned: No puedes desproteger un objeto que pertenece a ***.
+msg-owner-remove: Has eliminado usuarios de este objeto!
+msg-user-remove-owned: No puedes modificar los usuarios en un objeto perteneciente a ***.
+msg-user-break-owned: No puedes romper un objeto que pertenece a ***.
+msg-user-denied-door: No tienes permiso para usar esta puerta.
+msg-user-touch-fee: 'Pagaras un impuesto de ### a *** para usar este objeto.'
+msg-user-touch-owned: Este objeto pertecene a ***.
+msg-help-select: Cartel seleccionado, usa /lockette <numero de linea> <texto> para cambiarlo.
+msg-admin-bypass: Has usado una puerta que pertenece a ***, recuerda cerrarla.
+msg-admin-snoop: (Admin) @@@ ha usado un objeto perteneciente a ***
+msg-user-denied: No tienes permiso para usar este objeto.
+msg-error-zone: Esta zona esta protegida por ***.
+msg-error-permission: No tienes permiso para proteger este objeto.
+msg-error-claim: ¡No se ha encontrado nada cercano para proteger!
+msg-error-claim-conflict: Existe un conflicto con una puerta protegida cercana.
+msg-admin-claim-error: El jugador *** no esta conectado, asegurate de escribir correctamente su nombre.
+msg-admin-claim: Has protegido un objeto para ***.
+msg-owner-claim: ¡Has protegido este objeto!
+msg-error-adduser-owned: No puedes añadir usuarios en un objeto perteneciente a ***.
+msg-error-adduser: ¡No se ha encontrado ningun objeto cercano para añadir usuarios!
+msg-owner-adduser: Has añadido usuarios a este objeto.
+msg-help-command1: '&C/lockette <numero de linea> <texto> - Edita carteles en objetos protegidos.
+  Clic derecho en el cartel a proteger.'
+msg-help-command2: '&C/lockette fix - Arregla una puerta protegida que no funciona correctamente. Apunta la puerta a arreglar y usa este comando.'
+msg-help-command3: '&C/lockette reload - Recarga los archivos de configuracion. ¡Solo administradores!'
+msg-help-command4: '&C/lockette version - Muestra la version de Lockette.'
+msg-admin-reload: Recargando archivos de la configuracion.
+msg-error-fix: No se ha encontrado ninguna puerta para arreglar.
+msg-error-edit: Primero has de seleccionar un cartel. Haz clic derecho a uno para editarlo.
+msg-owner-edit: Cartel editado.

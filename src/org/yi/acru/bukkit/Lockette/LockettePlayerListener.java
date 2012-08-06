@@ -127,13 +127,14 @@ public class LockettePlayerListener implements Listener{
 				if(length > 15) length = 15;
 
 				// Check owner.
-				if(owner.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length))){
-				//if(sign.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length))){
+				if(owner.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length)) || Lockette.debugMode){
 					int			line = Integer.parseInt(command[1]) - 1;
 					
 					// Disallow editing [Private] line 1/2 here.
-					if(line <= 0) return;
-					else if(line <= 1) if(privateSign) return;
+					if(!Lockette.debugMode){
+						if(line <= 0) return;
+						else if(line <= 1) if(privateSign) return;
+					}
 					
 					
 					if(command.length == 3){
@@ -264,6 +265,11 @@ public class LockettePlayerListener implements Listener{
 					type = checkBlock.getTypeId();
 					
 					if((type == Material.WOODEN_DOOR.getId()) || (type == Material.IRON_DOOR_BLOCK.getId()) || (type == materialFenceGate)){
+						event.setUseInteractedBlock(Result.DENY);
+						return;
+					}
+					
+					if(hasAttachedTrapDoor(block)){
 						event.setUseInteractedBlock(Result.DENY);
 						return;
 					}
@@ -407,8 +413,7 @@ public class LockettePlayerListener implements Listener{
 		if(length > 15) length = 15;
 		
 		// Check owner.
-		if(sign.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length))){
-		//if(sign.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length))){
+		if(sign.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length)) || Lockette.debugMode){
 			if(!block.equals(plugin.playerList.get(player.getName()))){
 				// Associate the user with the owned sign.
 				plugin.playerList.put(player.getName(), block);
@@ -587,6 +592,39 @@ public class LockettePlayerListener implements Listener{
 		}
 		
 		return(true);
+	}
+	
+	
+	public static boolean hasTrapDoorAttached(Block block){
+		Block		checkBlock;
+		int			type;
+		int			face = block.getData() & 0x3;
+		
+		checkBlock = block.getRelative(BlockFace.NORTH);
+		type = checkBlock.getTypeId();
+		if(type == Material.TRAP_DOOR.getId()){
+			if(face == 2) return(true);
+		}
+		
+		checkBlock = block.getRelative(BlockFace.EAST);
+		type = checkBlock.getTypeId();
+		if(type == Material.TRAP_DOOR.getId()){
+			if(face == 0) return(true);
+		}
+		
+		checkBlock = block.getRelative(BlockFace.SOUTH);
+		type = checkBlock.getTypeId();
+		if(type == Material.TRAP_DOOR.getId()){
+			if(face == 3) return(true);
+		}
+		
+		checkBlock = block.getRelative(BlockFace.WEST);
+		type = checkBlock.getTypeId();
+		if(type == Material.TRAP_DOOR.getId()){
+			if(face == 1) return(true);
+		}
+		
+		return(false);
 	}
 }
 

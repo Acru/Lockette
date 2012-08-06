@@ -1,0 +1,46 @@
+language: Danish
+author: Dumle29
+editors: ''
+version: 1
+alternate-private-tag: Privat
+alternate-moreusers-tag: Flere brugere
+alternate-everyone-tag: Alle
+alternate-operators-tag: Operatører
+alternate-timer-tag: Timer
+alternate-fee-tag: Gebyr
+msg-user-conflict-door: En konfliktende dør fjernet!
+msg-user-illegal: Ulovlig kiste fjernet!
+msg-user-resize-owned: Du kan ikke ændre størrelsen af en kist, krævet af en anden ***.
+msg-help-chest: Placer et skilt med overskriften [Private] for at låse den.
+msg-owner-release: Du har frigivet en beholder!
+msg-admin-release: (Admin) @@@ har tvangsåbnet en beholder ejet af ***!
+msg-user-release-owned: Du kan ikke frigøre en kist krævet af ***.
+msg-owner-remove: Du har fjernet brugere fra en beholder!
+msg-user-remove-owned: Du kan ikke fjerne brugere fra en beholder krævet af ***.
+msg-user-break-owned: Du kan ikke ødelægge en container krævet af ***.
+msg-user-denied-door: Du har ikke ret til at bruge denne dør.
+msg-user-touch-fee: 'Et gebyr ### vil blive opkrævet til ***, for at åbne.'
+msg-user-touch-owned: Denne beholder er krævet af ***.
+msg-help-select: Skilt valgt, brug /lockette <linje nummer> <tekt> for at redigere.
+msg-admin-bypass: Omgik en dør ejet af ***, sørg for at lukke den efter dig.
+msg-admin-snoop: (Admin) @@@ har snuset rundt i en beholder ejet af ***!
+msg-user-denied: Du har ikke ret til at åbne denne kiste.
+msg-error-zone: Denne zone er beskyttet af ***.
+msg-error-permission: Retten til at låse beholderen er benægtet.
+msg-error-claim: Ingen ukrævet beholder i nærheden til at kræve!
+msg-error-claim-conflict: Konflikt med en eksisterende beskyttet dør.
+msg-admin-claim-error: Spiller *** er ikke online, vær sikker på at du har det rigtige navn.
+msg-admin-claim: Du har krævet en beholder for ***.
+msg-owner-claim: Du har krævet en beholder!
+msg-error-adduser-owned: Du kan ikke tilføje brugere til en beholder krævet af ***.
+msg-error-adduser: Ingen krævet beholder i nærheden til at tilføje brugere til!
+msg-owner-adduser: Du har tilføjet brugere til beholderen!
+msg-help-command1: '&C/lockette <linje nummer> <tekt> - Redigere skilte på låste beholdere.
+    Højreklik på skiltene for at redigere.'
+msg-help-command2: '&C/lockette fix - Fikser en automatisk dør der sidder forkert. Kig på døren for at vælge den.'
+msg-help-command3: '&C/lockette reload - Reloader konfigurationsfilerne.  kun operatører.'
+msg-help-command4: '&C/lockette version - Viser lockettes versions streng.'
+msg-admin-reload: Genindlæs pluginets konfigurations-filer.
+msg-error-fix: Ingen ejet dør fundet.
+msg-error-edit: Vælg først et skilt ved at højreklikke på det.
+msg-owner-edit: Skilt redigeret succefuldt.

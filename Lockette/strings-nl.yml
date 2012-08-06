@@ -1,0 +1,42 @@
+language: Dutch
+author: Tofun
+editors: ''
+version: 2
+alternate-private-tag: Prive
+alternate-moreusers-tag: Meer mensen
+alternate-everyone-tag: Iedereen
+alternate-operators-tag: Beheerders
+alternate-timer-tag: Tijd
+msg-user-conflict-door: Conflicterende deur verwijderd!
+msg-user-illegal: Niet-toegestane kist verwijderd!
+msg-user-resize-owned: Je kan een kist van *** niet veranderen.
+msg-help-chest: Plaats een bordje met "[Prive]" naast de deur/kist om hem op slot te doen.
+msg-owner-release: Je hebt een container vrijgegeven!
+msg-admin-release: (Admin) @@@ heeft een container open gebroken van***!
+msg-user-release-owned: Je kan niet een container vrijgeven van ***.
+msg-owner-remove: Je hebt spelers verwijderd van een container!
+msg-user-remove-owned: Je kan geen spelers weg halen van een container van ***.
+msg-user-break-owned: Je kan geen container kapot maken van ***.
+msg-user-denied-door: Je hebt geen toegang tot deze deur.
+msg-user-touch-owned: Deze container is van ***.
+msg-help-select: Bord geselecteerd, gebruik /lockette edit om te bewerken.
+msg-admin-bypass: Je hebt een deur van *** open gebroken, doe de deur achter je dicht.
+msg-admin-snoop: (Admin) @@@ heeft gespiekt in een container van ***!
+msg-user-denied: Je hebt geen toegang tot deze container.
+msg-error-permission: Toegang tot op slot zetten geweigerd.
+msg-error-claim: Er is geen container in de buurt om op slot te zetten!
+msg-error-claim-conflict: Er is een conflict met een bestaande deur.
+msg-admin-claim-error: Speler *** is niet online, zorg dat je de goede naam hebt.
+msg-admin-claim: Je hebt een container geclaimd voor ***.
+msg-owner-claim: Je hebt een container geclaimd.
+msg-error-adduser-owned: Je kan geen spelers toevoegen aan de container van ***.
+msg-error-adduser: Geen container in de buurt om gebruikers aan toe te voegen!
+msg-owner-adduser: Je hebt mensen toegevoegd aan een container!
+msg-help-command1: '&C/lockette <regelnummer> <text> - Bewerkt signs op gesloten containers.'
+msg-help-command2: '&C/lockette fix - Fix een automatische deur. Kijk naar de deur te bewerken.'
+msg-help-command3: '&C/lockette reload - Herlaadt de config.'
+msg-help-command4: '&C/lockette version - Tonen versie.'
+msg-admin-reload: Plugin config bestanden herladen...
+msg-error-edit: Selecteer eerst een sign door rechts te klikken.
+msg-owner-edit: Sign bewerkt.
+msg-error-fix: Geen eigendom van de deur gevonden.
