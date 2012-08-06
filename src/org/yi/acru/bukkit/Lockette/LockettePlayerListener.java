@@ -127,15 +127,13 @@ public class LockettePlayerListener implements Listener{
 				if(length > 15) length = 15;
 
 				// Check owner.
-				if(owner.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length)) || player.getName().equals("Acru")){	// Temp for Debugging.
+				if(owner.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length))){
 				//if(sign.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length))){
 					int			line = Integer.parseInt(command[1]) - 1;
 					
 					// Disallow editing [Private] line 1/2 here.
-					if(!player.getName().equals("Acru")){	// For debugging.
-						if(line <= 0) return;
-						else if(line <= 1) if(privateSign) return;
-					}
+					if(line <= 0) return;
+					else if(line <= 1) if(privateSign) return;
 					
 					
 					if(command.length == 3){
@@ -409,7 +407,7 @@ public class LockettePlayerListener implements Listener{
 		if(length > 15) length = 15;
 		
 		// Check owner.
-		if(sign.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length)) || player.getName().equals("Acru")){	// Temp for Debugging.
+		if(sign.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length))){
 		//if(sign.getLine(1).replaceAll("(?i)\u00A7[0-F]", "").equals(player.getName().substring(0, length))){
 			if(!block.equals(plugin.playerList.get(player.getName()))){
 				// Associate the user with the owned sign.
