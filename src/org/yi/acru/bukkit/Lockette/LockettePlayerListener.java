@@ -595,32 +595,36 @@ public class LockettePlayerListener implements Listener{
 	}
 	
 	
-	public static boolean hasTrapDoorAttached(Block block){
+	public static boolean hasAttachedTrapDoor(Block block){
 		Block		checkBlock;
 		int			type;
-		int			face = block.getData() & 0x3;
+		int			face;
 		
 		checkBlock = block.getRelative(BlockFace.NORTH);
 		type = checkBlock.getTypeId();
 		if(type == Material.TRAP_DOOR.getId()){
+			face = checkBlock.getData() & 0x3;
 			if(face == 2) return(true);
 		}
 		
 		checkBlock = block.getRelative(BlockFace.EAST);
 		type = checkBlock.getTypeId();
 		if(type == Material.TRAP_DOOR.getId()){
+			face = checkBlock.getData() & 0x3;
 			if(face == 0) return(true);
 		}
 		
 		checkBlock = block.getRelative(BlockFace.SOUTH);
 		type = checkBlock.getTypeId();
 		if(type == Material.TRAP_DOOR.getId()){
+			face = checkBlock.getData() & 0x3;
 			if(face == 3) return(true);
 		}
 		
 		checkBlock = block.getRelative(BlockFace.WEST);
 		type = checkBlock.getTypeId();
 		if(type == Material.TRAP_DOOR.getId()){
+			face = checkBlock.getData() & 0x3;
 			if(face == 1) return(true);
 		}
 		

@@ -1,6 +1,6 @@
 name: Lockette
 main: org.yi.acru.bukkit.Lockette.Lockette
-version: 1.7.2
+version: 1.7.3
 author: Acru
 description: A simple plugin for locking containers and doors without passwords or database files.  Inspired by the old hmod plugins Lock by Roman "kingseta" Pramberger and ChestCapsule by Fernando "Fergo".
 commands:
