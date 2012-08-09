@@ -24,6 +24,7 @@ import org.bukkit.block.Sign;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -340,22 +341,25 @@ public class Lockette extends PluginCore{
 			strings = null;
 		}
 		
-		// Load the strings file if not loaded yet.
-		if(strings == null){
-			strings = new YamlConfiguration();
-			try{
-				strings.load(stringsFile);
-			}
-			catch(Exception ex){}
-		}
-		else if(reload){
-			try{
-				strings.load(stringsFile);
-			}
-			catch(Exception ex){}
-		}
 		
-		// To remove french tags from the default strings file, and to not save to alt strings files.
+		// Load the strings file.
+		strings = new YamlConfiguration();
+		try{
+			strings.load(stringsFile);
+		}
+		catch(InvalidConfigurationException ex){
+			log.warning("[" + getDescription().getName() + "] Error loading " + fileName + ": " + ex.getMessage());
+			
+			if(!fileName.equals("strings-en.yml")){
+				loadStrings(reload, "strings-en.yml");
+				return;
+			}
+			else log.warning("[" + getDescription().getName() + "] Returning to default strings.");
+		}
+		catch(Exception ex){}
+		
+		
+		// To remove French tags from the default strings file, and to not save to alternate strings files.
 		boolean		original = false;
 		if(fileName.equals("strings-en.yml")){
 			original = true;
@@ -375,6 +379,15 @@ public class Lockette extends PluginCore{
 			strings.set("editors", "");
 			strings.set("version", 0);
 		}
+		
+		
+		// Report language.
+		
+		tempString = strings.getString("language");
+		if((tempString == null) || tempString.isEmpty()){
+			log.info("[" + getDescription().getName() + "] Loading strings file " + fileName);
+		}
+		else log.info("[" + getDescription().getName() + "] Loading strings file for " + tempString + " by " + strings.getString("author"));
 		
 		
 		// Load in the alternate sign strings.
@@ -589,8 +602,8 @@ public class Lockette extends PluginCore{
 		if(original){
 			strings.set("msg-help-command1", "&C/lockette <line number> <text> - Edits signs on locked containers. Right click on the sign to edit.");
 			strings.set("msg-help-command2", "&C/lockette fix - Fixes an automatic door that is in the wrong position. Look at the door to edit.");
-			strings.set("msg-help-command3", "&C/lockette reload - Reloads the configuration files.  Operators only.");
-			strings.set("msg-help-command4", "&C/lockette version - Reports Lockette version string.");
+			strings.set("msg-help-command3", "&C/lockette reload - Reloads the configuration files. Operators only.");
+			strings.set("msg-help-command4", "&C/lockette version - Reports Lockette version.");
 			stringChanged = true;
 		}
 		

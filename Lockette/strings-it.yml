@@ -1,0 +1,45 @@
+language: Italian
+author: Nikkolo_DTU
+editors: ''
+version: 1
+alternate-private-tag: Privato
+alternate-moreusers-tag: Altri player
+alternate-everyone-tag: Tutti
+alternate-operators-tag: Operatori
+alternate-timer-tag: Timer
+alternate-fee-tag: Tassa
+msg-user-conflict-door: Conflitto della porta rimosso!
+msg-user-illegal: Cassetta invalida rimossa!
+msg-user-resize-owned: Non puoi modificare la cassetta claimata da ***.
+msg-help-chest: Piazza un cartello con scritto [Private] vicino alla cassetta per bloccarla.
+msg-owner-release: Hai rilasciato un container!
+msg-admin-release: (Admin) @@@ ha aperto un container controllato da ***!
+msg-user-release-owned: Non puoi rilasciare un container claimato da ***.
+msg-owner-remove: Hai rimosso un player dal container!
+msg-user-remove-owned: Non puoi rimuovere i player dal container claimato da ***.
+msg-user-break-owned: Non puoi rompere il container claimato da ***.
+msg-user-denied-door: Non hai il permesso di usare questa porta.
+msg-user-touch-fee: Una tassa di ### verrà pagata a ***, per aprire.
+msg-user-touch-owned: Questo container è stato claimato da ***.
+msg-help-select: Cartello selezionato, usa /lockette <numero linea> <testo> per modificarlo.
+msg-admin-bypass: Hai bypassato la porta di ***, ricordati di chiuderla.
+msg-admin-snoop: (Admin) @@@ stà curiosando nel container claimato da ***!
+msg-user-denied: Non hai il permesso per aprire questo container.
+msg-error-zone: Questa zona è stata protetta da ***.
+msg-error-permission: Non hai i permessi per bloccare questo container.
+msg-error-claim: Nessun container da claimare qui vicino!
+msg-error-claim-conflict: Conflitto con una porta gia protetta.
+msg-admin-claim-error: Il player *** non è online, controlla di aver scritto correttamente il nome.
+msg-admin-claim: Hai claimato un container per ***.
+msg-owner-claim: Hai claimato un container!
+msg-error-adduser-owned: Non puoi aggiungere altri player nel container claimato da ***.
+msg-error-adduser: Nessun container a cui aggiungere altri player qui vicino!
+msg-owner-adduser: Hai aggiunto un player nel container!
+msg-help-command1: '&C/lockette <numero linea> <testo> - Modifica i cartelli dei container claimati. Click destro sul cartello per modificarlo.'
+msg-help-command2: '&C/lockette fix - Risolvi una porta automatica che è nella posizione sbagliata. Guarda la porta per modificare.'
+msg-help-command3: '&C/lockette reload - Ricarica la configurazione dei file. Solooperatori.'
+msg-help-command4: '&C/lockette version - Riporta la versione corrente del plugin.'
+msg-admin-reload: Ricaricando la configurazione dei file.
+msg-error-fix: Nessun proprietario della porta trovato.
+msg-error-edit: Prima seleziona un cartello cliccandoci con il tasto destro.
+msg-owner-edit: Cartello modificato con successo.

@@ -1,10 +1,16 @@
+String translations should be in ANSI format. (UTF-8 doesn't seem to work anymore.)
+Care should be taken with the special characters in yml, such as quotes and colons.
+
+
 Translation credit where credit is due!
 
-French by Misa.
-German by Efstajas.
-Polish by Kamild1996.
-Dutch by Tofun.
-Danish by Dumle29.
-Slovenian by LiqouRiiCe.
-Spanish by Agubelu.
+French by Misa
+German by Efstajas
+Polish by Kamild1996
+Dutch by Tofun
+Danish by Dumle29
+Slovenian by LiqouRiiCe
+Spanish by Agubelu
 Norwegian by Tio1999
+Swedish by TheMineKraftor
+Italian by Nikkolo_DTU

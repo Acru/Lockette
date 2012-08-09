@@ -1,0 +1,46 @@
+language: Swedish
+author: TheMineKraftor
+editors: ''
+version: 2
+alternate-private-tag: Privat
+alternate-moreusers-tag: Fler användare
+alternate-everyone-tag: Alla
+alternate-operators-tag: Operatörer
+alternate-timer-tag: Timer
+alternate-fee-tag: Kostnad
+msg-user-conflict-door: Problematisk dörr borttagen!
+msg-user-illegal: Illegal kista har blivit borttagen!
+msg-user-resize-owned: Du kan inte storleksförändra kistan som *** äger.
+msg-help-chest: Placera en skylt med överskriften [Private] bredvid en kista för att låsa den.
+msg-owner-release: Du har frigjort ett föremål!
+msg-admin-release: (Admin) @@@ har brutit upp ett föremål som *** äger!
+msg-user-release-owned: Du kan inte frigöra föremålet som *** äger.
+msg-owner-remove: Du har tagit bort användare från föremålet!
+msg-user-remove-owned: Du kan inte ta bort användare från föremålet som *** äger.
+msg-user-break-owned: Du kan inte förstöra ett föremål som *** äger.
+msg-user-denied-door: Du har inte tillstånd att öppna denna dörr.
+msg-user-touch-fee: 'En kostnad av ### kommer betalas till ***, för att öppnas.'
+msg-user-touch-owned: Detta föremål har redan lagts anspråk på utav ***.
+msg-help-select: Skylt markerad, använd /lockette <linje> <text> för att redigera.
+msg-admin-bypass: Brutit upp en dörr som ägs av ***, se till att stänga den efter dig.
+msg-admin-snoop: (Admin) @@@ har snokat runt i ett föremål som är ägd av ***!
+msg-user-denied: Du har inte tillstånd att öppna detta föremål.
+msg-error-zone: Denna zon är skyddad av ***.
+msg-error-permission: Tillstånd att låsa föremålet nekas.
+msg-error-claim: Inget oägt föremål i närheten för att göra det Privat!
+msg-error-claim-conflict: Ett problem uppstod med en dörr som redan är skyddad
+msg-admin-claim-error: '*** är inte online, se till att du har skrivit rätt namn.'
+msg-admin-claim: Du har lagt anspråk på ett föremål för ***.
+msg-owner-claim: Du har lagt anspråk på ett föremål!
+msg-error-adduser-owned: Du kan inte lägga anspråk på föremålet som ägs av ***.
+msg-error-adduser: Inget föremål i närheten tillgängligt för nya användare!
+msg-owner-adduser: Du har lagt till användare till föremålet!
+msg-help-command1: '&C/lockette <line number> <text> - Redigera skyltar på låsta föremål.
+Högerklicka på skylten för att redigera.'
+msg-help-command2: '&C/lockette fix - Lagar en dörr i felaktig position. Titta på dörren för att redigera.'
+msg-help-command3: '&C/lockette reload - Laddar om inställningsfilerna. Endas för OP.'
+msg-help-command4: '&C/lockette version - Visar nuvarande Lockette version.'
+msg-admin-reload: Laddar om inställningsfiler.
+msg-error-fix: Ingen ägd dörr hittades.
+msg-error-edit: Markera en skylt genom att högerklicka.
+msg-owner-edit: Redigering av skylten lyckades.

@@ -1,9 +1,19 @@
-Active Changelog is here:
+* Unreleased changes:
+
+?
+
+
+* Active release build change log is here:
 
 http://dev.bukkit.org/server-mods/lockette/pages/lockette-change-log/
 
 
-But here is a copy/paste:
+* But here is a copy/paste:
+
+Version 1.7.3:
+
+    Corrected an undefined method error.
+    Added Norwegian language translation. 
 
 Version 1.7.2:
 

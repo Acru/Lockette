@@ -1,7 +1,7 @@
 language: Spanish
 author: Agubelu
 editors: _Robert
-version: 1
+version: 3
 alternate-private-tag: Privado
 alternate-moreusers-tag: Mas Usuarios
 alternate-everyone-tag: Todos
@@ -35,8 +35,7 @@ msg-owner-claim: ¡Has protegido este objeto!
 msg-error-adduser-owned: No puedes añadir usuarios en un objeto perteneciente a ***.
 msg-error-adduser: ¡No se ha encontrado ningun objeto cercano para añadir usuarios!
 msg-owner-adduser: Has añadido usuarios a este objeto.
-msg-help-command1: '&C/lockette <numero de linea> <texto> - Edita carteles en objetos protegidos.
-  Clic derecho en el cartel a proteger.'
+msg-help-command1: '&C/lockette <numero de linea> <texto> - Edita carteles en objetos protegidos. Clic derecho en el cartel a proteger.'
 msg-help-command2: '&C/lockette fix - Arregla una puerta protegida que no funciona correctamente. Apunta la puerta a arreglar y usa este comando.'
 msg-help-command3: '&C/lockette reload - Recarga los archivos de configuracion. ¡Solo administradores!'
 msg-help-command4: '&C/lockette version - Muestra la version de Lockette.'

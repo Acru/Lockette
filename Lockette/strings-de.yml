@@ -8,35 +8,35 @@ alternate-everyone-tag: Jeder
 alternate-operators-tag: Operatoren
 alternate-timer-tag: Minuten
 msg-user-illegal: Illegale Kiste entfernt!
-msg-user-resize-owned: Du kannst keine von *** geschÃ¼tzte Kiste vergrÃ¶ssern.
-msg-help-chest: Platziere ein Schild mit [Private] an der Truhe, um sie zu schÃ¼tzen.
-msg-user-touch-owned: Diese Kiste wurde geschÃ¼tzt von ***.
-msg-help-select: Schild ausgewÃ¤hlt, benutze /lockette <Reihe> <Text>, um sie zu Ã¤ndern.
-msg-admin-snoop: (Admin) @@@ hat in eine Truhe, die *** geschÃ¼tzt hat, reingeguckt!
-msg-user-denied: Du darfst das hier nicht Ã¶ffnen!
-msg-owner-release: Du hast diese Truhe wieder Ã¶ffentlich gemacht!
-msg-admin-release: (Admin) @@@ hat eine Truhe von *** Ã¶ffentlich gemacht!
-msg-user-release-owned: Du kannst diese Truhe von *** nicht Ã¶ffentlich machen.
+msg-user-resize-owned: Du kannst keine von *** geschützte Kiste vergrössern.
+msg-help-chest: Platziere ein Schild mit [Private] an der Truhe, um sie zu schützen.
+msg-user-touch-owned: Diese Kiste wurde geschützt von ***.
+msg-help-select: Schild ausgewählt, benutze /lockette <Reihe> <Text>, um sie zu ändern.
+msg-admin-snoop: (Admin) @@@ hat in eine Truhe, die *** geschützt hat, reingeguckt!
+msg-user-denied: Du darfst das hier nicht öffnen!
+msg-owner-release: Du hast diese Truhe wieder öffentlich gemacht!
+msg-admin-release: (Admin) @@@ hat eine Truhe von *** öffentlich gemacht!
+msg-user-release-owned: Du kannst diese Truhe von *** nicht öffentlich machen.
 msg-owner-remove: Du hast Personen von der Inhaberliste dieser Truhe entfernt!
 msg-user-remove-owned: Du kannst keine Personen von dieser Truhe entfernen.
-msg-user-break-owned: Du kannst diese von *** geschÃ¼tzte Truhe nicht zerstÃ¶ren.
-msg-error-claim: Hier gibt es keine Truhe in der NÃ¤he!
-msg-owner-claim: Du hast diese Truhe geschÃ¼tzt!
+msg-user-break-owned: Du kannst diese von *** geschützte Truhe nicht zerstören.
+msg-error-claim: Hier gibt es keine Truhe in der Nähe!
+msg-owner-claim: Du hast diese Truhe geschützt!
 msg-error-adduser-owned: Du kannst keine Personen auf die Inhaberliste dieser Truhe setzen.
 msg-error-adduser: Hier gibt es keine Truhe!
-msg-owner-adduser: Du hast Personen zu dieser Truhe hinzugefÃ¼gt!
-msg-help-command1: '&C/lockette <Reihe> <Text> - Ã„ndert Text auf Lockette- Schildern. Rechtsklick auf das Schild, um es auszuwÃ¤hlen.'
-msg-help-command2: '&C/lockette fix - Fix eine automatische TÃ¼r. Schauen Sie sich die TÃ¼r zu bearbeiten.'
-msg-help-command3: '&C/lockette reload - LÃ¤dt die Konfiguration neu.'
+msg-owner-adduser: Du hast Personen zu dieser Truhe hinzugefügt!
+msg-help-command1: '&C/lockette <Reihe> <Text> - Ändert Text auf Lockette- Schildern. Rechtsklick auf das Schild, um es auszuwählen.'
+msg-help-command2: '&C/lockette fix - Fix eine automatische Tür. Schauen Sie sich die Tür zu bearbeiten.'
+msg-help-command3: '&C/lockette reload - Lädt die Konfiguration neu.'
 msg-help-command4: '&C/lockette version - Zeige version.'
-msg-admin-reload: LÃ¤dt Lockette- Konfiguration neu.
-msg-error-edit: Du musst erst ein Schild per Rechtsklick auswÃ¤hlen.
-msg-owner-edit: Text geÃ¤ndert.
-msg-user-denied-door: Du darfst diese TÃ¼r nicht benutzen.
-msg-error-claim-conflict: Konflikt mit einer bereits vorhandenen geschÃ¼tzten TÃ¼r.
-msg-user-conflict-door: Konflikt- TÃ¼r entfernt!
-msg-admin-bypass: Du hast eine TÃ¼r von *** geÃ¶ffnet, denke dran sie zu schliessen.
+msg-admin-reload: Lädt Lockette- Konfiguration neu.
+msg-error-edit: Du musst erst ein Schild per Rechtsklick auswählen.
+msg-owner-edit: Text geändert.
+msg-user-denied-door: Du darfst diese Tür nicht benutzen.
+msg-error-claim-conflict: Konflikt mit einer bereits vorhandenen geschützten Tür.
+msg-user-conflict-door: Konflikt- Tür entfernt!
+msg-admin-bypass: Du hast eine Tür von *** geöffnet, denke dran sie zu schliessen.
 msg-error-permission: Permission to lock container denied.
 msg-admin-claim-error: Spieler *** ist nicht online. Hast du den richtigen Namen eingegeben?
-msg-admin-claim: Du hast eine Truhe fÃ¼r *** geschÃ¼tzt..
-msg-error-fix: Kein Besitz TÃ¼r gefunden.
+msg-admin-claim: Du hast eine Truhe für *** geschützt..
+msg-error-fix: Kein Besitz Tür gefunden.
